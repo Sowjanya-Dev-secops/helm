@@ -1,6 +1,6 @@
 deployment:
   replicas: 4
-  imageVersion: trixie-perl
+  imageVersion: stable-bookwarm-perl
 service:
   type: LoadBalancer
   serviceport: 80
