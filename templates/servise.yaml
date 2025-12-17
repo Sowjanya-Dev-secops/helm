@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: service
 spec:
-  type: {{ .Value.service.type }}
+  type: {{ .Values.service.type }}
   selector:
       purpose: helm-demo
         # purpose: headless-svc-demo
       project: roboshop
   ports:
     - protocol: TCP
-      port: {{ .Value.service.serviceport }} # service port
+      port: {{ .Values.service.serviceport }} # service port
       targetPort: 80 #container port
