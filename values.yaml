@@ -3,4 +3,4 @@ deployment:
   imageVersion: latest
 service:
   type: LoadBalancer
-  seviceport: 80
+  serviceport: 80
